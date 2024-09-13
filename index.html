@@ -20,136 +20,666 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>
-					Beautiful presentations
+				<h1>Python
+					<h2>Типы данных</h2>
+					<img class="r-stretch" alt="ktkv-presentations.github.io/algos-4" data-type="qrcode">
 				</h1>
-				<h2>New features</h2>
+			</section>
+			<section>
+				<h1>Питон - простой язык:</h1>
 				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
+					<li>Работает как другие языки</li>
+					<li>... иногда</li>
+					<li>Механизмы работы с данными просты</li>
+					<li>... однако могут быть непонятны с первого взгляда</li>
+					<li>Все данные - объекты</li>
+					<li>... ну почти</li>
 				</ul>
 			</section>
 			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
-					colorscheme!</h6>
+				<pre><code class="python" data-trim data-noescape><script type="text/template">
+def add_item(item, items=[]):
+   items.append(item)
+   return items
+
+
+print(add_item(1))  # Output: [1]
+print(add_item(2))  # Output: [1, 2], не [2] как ожидалось
+					</script></code></pre>
+				<h4>Programming on Python be like:</h4>
+				<img class="r-stretch" src="https://media.tenor.com/uBcbvnuP3K0AAAAM/lil-yachty-drake.gif" alt="">
 			</section>
 			<section>
 				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-					</div>
+					<h1>Типы данных</h1>
+					<img src="https://preview.redd.it/958mvx20z8371.jpg?auto=webp&s=4aa23a578a4b3d6440f81c5f461eeb4052a6235d"
+						class="r-stretch" alt="">
 				</section>
 				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+					<h1>Все типы данных можно разделить на</h1>
+					<ul>
+						<li>
+							<code class="plaintext">изменяемые</code> (множества, списки, словари);
+						</li>
+						<li>
+							<code class="plaintext">неизменяемые</code> (кортежи, строки, числа);
+						</li>
+						<li>
+							<code class="plaintext">упорядоченные</code> (списки, строки, кортежи, словари);
+						</li>
+						<li>
+							<code class="plaintext">неупорядоченные</code> (множества).
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Комментарии</h1>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+# Это комментарий
+x = 10 # и так тоже работает
+"""
+Этот блок является многострочным комментарием.
+Он может занимать несколько строк.
+"""
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Числовые типы</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="border-b">
+							<h4>int</h4>
+							<div>Целые числа</div>
+							<div>Поддерживается произвольная длина чисел</div>
 						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						<div class="border-b">
+							<h4>float</h4>
+							<div>Числа с плавающей точкой</div>
+							<div>Представляют вещественные числа (дробные)</div>
 						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						<div class="border-b col-span-2">
+							<h4>complex</h4>
+							<div>Комплексные числа</div>
+							<div>представляются в виде <code class="plaintext">a + bj</code>, где <code class="plaintext">a</code> —
+								действительная часть, а <code class="plaintext">b</code> — мнимая</div>
 						</div>
 					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+num1 = 2      # <class 'int'>
+num2 = 1.2    # <class 'float'>
+num3 = a + 3j # <class 'complex'>)
+num4 = 3141592653589793238462643383279502884197 # <class 'int'>
+					</script></code></pre>
 				</section>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
+				<section>
+					<h1>Логический тип</h1>
+					<h2>bool</h2>
 					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
+						может принимать одно из двух значений <code class="plaintext">True</code> и <code
+							class="plaintext">False</code>
 					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+bool1 = True # <class 'bool'>
+bool2 = False # <class 'bool'>
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Строковый тип</h1>
+					<h2>str</h2>
+					<div>
+						используются для представления текста и представляют собой последовательность символов
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+msg = "Hello world!" # <class 'str'>
+					</script></code></pre>
 				</section>
 				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
+					<h1>Список</h1>
+					<h2>list</h2>
+					<div>
+						упорядоченная изменяемая коллекция объектов
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+numbers = [1, 2, 3, 4, 5] # <class 'list'>
+					</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h1>Список</h1>
+					<h2>list</h2>
+					<div>
+						упорядоченная изменяемая коллекция объектов
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+numbers = [1, 2, 3, 4, 5] # <class 'list'>
+					 0  1  2  3  4
+					</script></code></pre>
+					<div>
+						У каждого элемента есть индекс, с помощью которого к нему можно обратиться
+					</div>
+				</section>
+				<section>
+					<h1>Кортеж</h1>
+					<h2>tuple</h2>
+					<div>
+						Как списки, но неизменяемы (immutable)
+					</div>
+					<div>Создают фиксированную последовательность данных</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+coordinates = (10, 20, 30, 40, 50) # <class 'tuple'>
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Множество</h1>
+					<h2>set</h2>
+					<div>
+						неупорядоченная коллекция уникальных элементов (нет дублирующихся значений)
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+unique_numbers = {1, 2, 3, 4, 5} # <class 'set'>
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Словарь</h1>
+					<h2>dict</h2>
+					<div>неупорядоченная коллекция пар «ключ-значение», где ключи - уникальны</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+student = {
+	"name": "John",
+	"age": 21,
+	"grade": "A"
+} # <class 'dict'>
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>None</h1>
+					<div>обозначает отсутствие значения или пустое значение</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+result = None # <class 'NoneType'>
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>bytes</h1>
+					<div>неизменяемая последовательность байтов и используется для работы с бинарными данными</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+byte_data = b"Hello, bytes!" # <class 'NoneType'>
+					</script></code></pre>
 				</section>
 			</section>
 			<section>
-				<h1>Mermaid for beautiful diagrams!</h1>
-				<div class="mermaid">
-					<pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre>
+				<section>
+					<h1>Преобразование типов данных</h1>
+					<h2>Явное преобразование</h2>
+					<ul>
+						<li><code class="python">int()</code> - в целое чисто</li>
+						<li><code class="python">float()</code> - в число с плавающей точкой</li>
+						<li><code class="python">str()</code> - в строку</li>
+						<li><code class="python">list()</code> - в лист</li>
+						<li><code class="python">tuple()</code> - в кортеж</li>
+						<li>...</li>
+					</ul>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+x = "10"
+y = int(x)  # Преобразование строки в целое число
+print(y)    # 10
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Преобразование типов данных</h1>
+					<h2>Неявное преобразование</h2>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+result1 = 10 + 3.5 # float
+result2 = 10 / 1   # float
+					</script></code></pre>
+				</section>
+			</section>
+			<section>
+				<h1>Проверка типа данных</h1>
+				<div>Иногда для применения определенных методов необходимо убедиться, что мы работаем с определенным типом
+					данных</div>
+				<div class="grid grid-cols-2 gap-4">
+					<div><code class="python">type(x)</code></div>
+					<div><code class="python">isinstance(x, int)</code></div>
 				</div>
-				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
+				<pre><code class="python" data-trim data-noescape><script type="text/template">
+x = 42
+print(type(x))  # <class 'int'>
+print(isinstance(x, int))  # True
+					</script></code></pre>
 			</section>
 			<section>
-				<h1>Now supports Nerd font icons!</h1>
-				<div>Nerdy project that adds icons to font itself</div>
-				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
-				</h6>
-			</section>
-			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
-			</section>
-			<section>
-				<h1>New changes on the way!</h1>
+				<section>
+					<h1>Операции и выражения в Python</h1>
+					<p><code class="plaintext">Операнд</code> - элемент, над которым выполняется операция в выражении</p>
+					<p><code class="plaintext">Операции</code> - действие, которое выполняется над значениями или объектами</p>
+					<p><code class="plaintext">Выражение</code> - комбинация операндов и операторов, которая при вычислении
+						возвращает результат</p>
+				</section>
+				<section>
+					<h1>Арифметические операции</h1>
+					<div>используются для выполнения математических вычислений</div>
+					<div>
+						<p><code class="python">result = 5 + 3  # 8</code> - сложение</p>
+						<p><code class="python">result = 10 - 4 # 6</code> - вычитание</p>
+						<p><code class="python">result = 6 * 7  # 42</code> - умножение</p>
+						<p><code class="python">result = 8 / 2  # 4.0</code> - деление</p>
+						<p><code class="python">result = 9 // 2 # 4</code> - деление нацело</p>
+						<p><code class="python">result = 10 % 3 # 1</code> - остаток от деления</p>
+						<p><code class="python">result = 2 ** 3 # 8</code> - возведение в степень</p>
+					</div>
+				</section>
+				<section>
+					<h1>Арифметика со строками</h1>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+"Hello" + " " + "world!" # "Hello world!"
+"Hello" * 3							 # "HelloHelloHello"
+"5" + "2"								 # Город Санкт-Петербург "52"
+					</script></code></pre>
+				</section>
+				<section>
+					<img class="r-stretch"
+						src="https://preview.redd.it/does-this-mean-js-is-cooler-v0-mfddgxjlp34b1.jpg?width=640&crop=smart&auto=webp&s=ffa930ab47fca417d6012a811693d6770f9ae20a"
+						alt="">
+				</section>
+				<section>
+					<h1>Операции сравнения</h1>
+					<p><code class="python">5 = = 5 # True</code> - равно</p>
+					<p><code class="python">5 ! = 3 # True</code> - не равно</p>
+					<p><code class="python">7 > 3  # True</code> - больше</p>
+					<p><code class="python">3 < 7  # True</code> - меньше</p>
+					<p><code class="python">7 > = 7 # True</code> - больше или равно</p>
+					<p><code class="python">3 < = 7 # True</code> - меньше или равно</p>
+					<div>==, >= и так далее пишутся вместе</div>
+				</section>
+				<section>
+					<h1>Присваивание и составные операторы</h1>
+					<p><code class="python">x = 10  # 10</code> - присваивание</p>
+					<p><code class="python">x += 10 # 20</code> - добавляет и присваивает</p>
+					<p><code class="python">x -= 5  # 15</code> - вычитает и присваивает</p>
+				</section>
+				<section>
+					<h1>Логические операции</h1>
+					<p><code class="python">True and True # True</code> - логическое и</p>
+					<p><code class="python">False or True # True</code> - логическое или</p>
+					<p><code class="python">not False # True</code> - логическое не</p>
+				</section>
+				<section>
+					<h1>Битовые операции</h1>
+					<p><code class="python">5 & 3 # 1</code> - побитовое и</p>
+					<p><code class="python">5 | 3 # 7</code> - побитовое или</p>
+					<p><code class="python">~5    # -6</code> - побитовое не</p>
+				</section>
+				<section>
+					<h1>Приоритет операций</h1>
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<h4>Высокий приоритет</h4>
+							<div class="border-r grid grid-cols-2 gap-8">
+								<code class="python">**</code>
+								<code class="python">*</code>
+								<code class="python">/</code>
+								<code class="python">//</code>
+								<code class="python">%</code>
+								<code class="python">%</code>
+								<code class="python">+</code>
+								<code class="python">-</code>
+							</div>
+						</div>
+						<div>
+							<h4>Низкий приоритет</h4>
+							<div class="border-b grid grid-cols-2 gap-8">
+								<code class="python">==</code>
+								<code class="python">!=</code>
+								<code class="python">></code>
+								<code class="python"><</code>
+								<code class="python">>=</code>
+								<code class="python"><=</code>
+								<code class="python">and</code>
+								<code class="python">or</code>
+								<code class="python">not</code>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Скобки и порядок вычисления</h1>
+					<div>для изменения приоритета операций можно использовать круглые скобки</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+result = (2 + 3) * 4  # 20
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Левостороннее и правостороннее связывание</h1>
+					<div>Некоторые операторы имеют левостороннее связывание, то есть они выполняются слева направо, а другие —
+						правостороннее связывание</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+result = 10 - 5 - 2  # эквивалентно (10 - 5) - 2
+result = 2 ** 3 ** 2  # эквивалентно 2 ** (3 ** 2)
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Структура программы</h1>
+					<div>программа состоит из набора инструкций, которые выполняются последовательно</div>
+				</section>
+				<section>
+					<h1>Базовая структура программы</h1>
+					<div>Состоит из одной или нескольких функций</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+print("Hello world")
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Функция</h1>
+					<div>позволяют разбить программу на логически связанные блоки кода, которые могут быть вызваны после её
+						объявления</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+def greet(name):
+	return f"Hello, {name}!"
+
+print(greet("Alice"))
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>В python нет hoisting</h1>
+					<h2>Касается переменных тоже</h2>
+					<div>уникальная особенность ЯП, которая позволяет вам обращаться к переменным и функциям до того, как они были
+						объявлены в коде</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+greet("Alice")
+
+def greet(name):
+	print(f"Hello, {name}"")
+					</script></code></pre>
+					<div>Зато есть в Golang, Ruby, JavaScript, VBScript</div>
+				</section>
+				<section>
+					<h1>Шаблонизация строк</h1>
+					<div>позволяют динамически вставлять данные в строки</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+chosen_one = "Neo"
+print("You are the One, " + chosen_one)
+print(f"You are the One, {chosen_one}")
+print("You are the One, {0}").format(chosen_one)
+print("You are the One, %s", % (chosen_one))
+# %s для строк, %d для целых чисел
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>
+						Модули и импорт
+					</h1>
+					<div>Модули позволяют организовать код в отдельные файлы для улучшения его структурированности</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+import math
+
+result = math.sqrt(16)  # Использование функции из модуля math
+print(result)  # 4.0
+					</script></code></pre>
+					<div>Импорт обычно производится в самом начале программы</div>
+				</section>
+				<section data-auto-animate="">
+					<h1>Управляющие конструкции</h1>
+					<div>Программы могут включать в себя условные операторы, циклы и обработку исключений, чтобы контролировать
+						выполнение различных блоков кода в зависимости от условий</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+x = 10
+if x > 5:
+    print("x больше 5")
+					</script></code></pre>
+				</section>
+				<section data-auto-animate="">
+					<h1>Особенности условных конструкций</h1>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="border-b">Ветвление с помощью <code class="python">if</code>, <code class="python">elif</code>,
+							<code class="python">else</code>
+						</div>
+						<div class="border-b">Неограниченное чисто <code class="python">elif</code></div>
+						<div class="border-b">Блок <code class="python">else</code> необязателен</div>
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+x = 10
+
+if x > 0:
+    print("x больше нуля")
+elif x == 0:
+    print("x равно нулю")
+else:
+    print("x меньше нуля")
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Условная конструкция match</h1>
+					<div>
+						используется для сравнения значения с несколькими шаблонами
+					</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+command = "start"
+
+match command:
+    case "start":
+        print("Запуск программы")
+    case "stop":
+        print("Остановка программы")
+    case _:
+        print("Неизвестная команда")
+					</script></code></pre>
+				</section>
+				<section>
+					<h1>Циклы</h1>
+					<div>конструкции, которые позволяют многократно выполнять набор инструкций, пока соблюдается определённое
+						условие</div>
+				</section>
+				<section>
+					<h1>Цикл for</h1>
+					<div>используется для прохода по элементам итерируемого объекта (списка, строки, кортежа, множества или
+						словаря)</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+    print(num)
+					</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+1
+2
+3
+4
+5
+					</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Цикл while</h1>
+					<div>
+						выполняет инструкции до тех пор, пока заданное условие остаётся истинным (True)
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+						</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+3
+4
+						</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Операторы управления циклами</h1>
+					<div>специальные операторы, которые позволяют управлять выполнением цикла</div>
+				</section>
+				<section>
+					<h1>Оператор break</h1>
+					<div>используется для немедленного завершения работы цикла, даже если его условие ещё истинно</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+					</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+					</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Оператор continue</h1>
+					<div>пропускает текущую итерацию цикла и переходит к следующей, не завершая цикл полностью</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+						</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+4
+						</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Оператор else</h1>
+					<div>
+						блок выполняется, когда цикл завершился естественным образом, то есть не был прерван оператором <code
+							class="python">break</code>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+for i in range(5):
+    print(i)
+else:
+    print("Цикл завершён!")
+						</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+3
+4
+Цикл завершён!
+						</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+else:
+    print("Цикл завершён!")
+						</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+						</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Цикл for с функцией range()</h1>
+					<div>
+						<code class="python">range(n)</code> генерирует последовательность чисел, которую можно использовать для
+						итераций
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+for num in range(5):
+    print(num)
+					</script></code></pre>
+						<pre class="fragment"><code class="python" data-trim data-noescape><script type="text/template">
+0
+1
+2
+3
+4
+					</script></code></pre>
+					</div>
+				</section>
+				<section>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="border-b">
+							<code class="python">range(n)</code>
+							<div>последовательность чисел от одного до n-1</div>
+							<pre><code class="python" data-trim data-noescape><script type="text/template">
+range(5)
+0
+1
+2
+3
+4
+							</script></code></pre>
+						</div>
+						<div class="border-b">
+							<code class="python">range(b, n)</code>
+							<div>последовательность чисел от b до n-1</div>
+							<pre><code class="python" data-trim data-noescape><script type="text/template">
+range(3, 9)
+3
+4
+5
+6
+7
+8
+							</script></code></pre>
+						</div>
+						<div class="border-b">
+							<code class="python">range(b, n, s)</code>
+							<div>последовательность чисел от b до n-1 с шагом s</div>
+							<pre><code class="python" data-trim data-noescape><script type="text/template">
+range(0, 9)
+0
+2
+4
+6
+8
+							</script></code></pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Бесконечные циклы</h1>
+					<div>если условие в цикле <code class="python">while</code> всегда остаётся истинным, цикл становится
+						бесконечным</div>
+					<pre><code class="python" data-trim data-noescape><script type="text/template">
+while True:
+		print("Этот цикл будет бесконечным, пока не будет вызван break")
+		break
+							</script></code></pre>
+				</section>
+				<section>
+					<h1>Вложенные циклы</h1>
+					<div>
+						один цикл может находиться внутри другого
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+for row in matrix:
+    for num in row:
+        print(num, end=' ')
+    print()
+							</script></code></pre>
+						<pre><code class="python" data-trim data-noescape><script type="text/template">
+1 2 3
+4 5 6
+7 8 9
+							</script></code></pre>
+					</div>
+				</section>
 			</section>
 		</div>
 	</div>
@@ -172,22 +702,22 @@ var foo = {
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
-		
+
 		const colors = {
-    blue0: 'rgb(61, 89, 161)',
-    blue: 'rgb(122, 162, 247)',
-    cyan: 'rgb(125, 207, 255)',
-    magenta: 'rgb(187, 154, 247)',
-    orange: 'rgb(255, 158, 100)',
-    yellow: 'rgb(224, 175, 104)',
-    green: 'rgb(158, 206, 106)',
-    teal: 'rgb(26, 188, 156)',
-    red: 'rgb(255, 117, 127)',
-    red1: 'rgb(219, 75, 75)',
-    fg: 'rgb(192, 202, 245)',
-    bg: 'rgb(26, 27, 38)',
-		transparent: "#00000000"
-};
+			blue0: 'rgb(61, 89, 161)',
+			blue: 'rgb(122, 162, 247)',
+			cyan: 'rgb(125, 207, 255)',
+			magenta: 'rgb(187, 154, 247)',
+			orange: 'rgb(255, 158, 100)',
+			yellow: 'rgb(224, 175, 104)',
+			green: 'rgb(158, 206, 106)',
+			teal: 'rgb(26, 188, 156)',
+			red: 'rgb(255, 117, 127)',
+			red1: 'rgb(219, 75, 75)',
+			fg: 'rgb(192, 202, 245)',
+			bg: 'rgb(26, 27, 38)',
+			transparent: "#00000000"
+		};
 
 		Reveal.initialize({
 			hash: true,
